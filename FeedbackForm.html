@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback! | EzyJobs</title>
+        <link rel="stylesheet" href="formStyle.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="navbar2.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="Content.html">Home</a>
+            <a href="Grooming.html">Barber</a>
+            <a href="PhotographyServices.html">Photography</a>
+            <a href="Laundry.html">Laundry</a>
+            <a href="Art.html">Art & Design</a>
+            <a href="PaymentPage.html">Payment</a>
+            <a href="FeedbackForm.html">Feedback Form</a>
+        </div>
+        <div class="pageHeader" style="position: relative; top:-70"><h1 style="color:rgb(16, 39, 75)">Give Us A Feedback!</h1></div>
+        <div class="container">
+            <form>
+                <div class="userinput">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your Name" id="contact-name" onkeyup="validateName()">
+                    <span id="name-error"></span>
+                </div>
+
+                <div class="userinput">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="0123456789" id="contact-phone" onkeyup="validatePhone()">
+                    <span id="phone-error"></span>
+                </div>
+
+                <div class="userinput">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter a valid email" id="contact-email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div>
+
+                <div class="userinput">
+                    <label>Your Feedback</label>
+                    <textarea rows="5" type="text" placeholder="Write your feedback" id="contact-message" onkeyup="validateMessage()"></textarea>
+                    <span id="message-error"></span>
+                </div>
+                
+                <button onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+                <br><center><p id="demo"></p></center>
+            </form>
+        </div>
+
+        <h2>Or Tweet using the <a style="color: #1DA1F2;" href="https://twitter.com/home" target="_blank">#EzyJobsFeedback</a> on twitter instead.</h2><br><br>
+        <p class="ads">Read our customers feedback below. (updated every Sunday)</p>
+        <div class="container">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Wow I used this <a href="https://twitter.com/hashtag/EzyJobs?src=hash&amp;ref_src=twsrc%5Etfw">#EzyJobs</a> website to hire a photographer! Had great experience. GO CHECK EM OUT!<a href="https://twitter.com/hashtag/EzyJobsFeedback?src=hash&amp;ref_src=twsrc%5Etfw">#EzyJobsFeedback</a></p>&mdash; Amir (@AIhaz3n) <a href="https://twitter.com/AIhaz3n/status/1611661549378371584?ref_src=twsrc%5Etfw">January 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="container">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tried <a href="https://twitter.com/hashtag/EzyJobs?src=hash&amp;ref_src=twsrc%5Etfw">#EzyJobs</a> to get haircut today. 10/10 very easy to use!<a href="https://twitter.com/hashtag/EzyJobsFeedback?src=hash&amp;ref_src=twsrc%5Etfw">#EzyJobsFeedback</a></p>&mdash; 🦖 (@_holySushi) <a href="https://twitter.com/_holySushi/status/1610547815507451904?ref_src=twsrc%5Etfw">January 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="container">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Guys im using my tweets to embed on this website ignore future tweets thanks!</p>&mdash; 🦖 (@_holySushi) <a href="https://twitter.com/_holySushi/status/1610547601346269193?ref_src=twsrc%5Etfw">January 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="container">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Drakes Rebrand is one of legendary proportions lol man said Toronto slang is ignorant 😂😂 <a href="https://t.co/y6LL37CYzS">pic.twitter.com/y6LL37CYzS</a></p>&mdash; E (@itstoo_real) <a href="https://twitter.com/itstoo_real/status/1610252162281635841?ref_src=twsrc%5Etfw">January 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <script src="formValidation.js"></script>
+    </body>
+</html>
