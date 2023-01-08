@@ -159,3 +159,26 @@ h4{
     margin-bottom: -130px;
     padding-top: 10px;
 }
+
+.layers {
+    display: flex;
+    justify-content: center;
+}
+
+.layers p{
+    color: #0b0b0b;
+    background-color: #f68a9b;
+    margin: 30px;
+    height: 170px;
+    padding: 30px;
+    border-radius: 20px;
+    padding-top: 100px;
+}
+
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
